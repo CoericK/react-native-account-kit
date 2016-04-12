@@ -1,0 +1,20 @@
+{
+  "name": "react-native-account-kit",
+  "author": {
+    "name": "Erick Arroyo",
+    "email": "erick.1726@gmail.com",
+    "url": "http://twitter.com/coerick"
+  },
+  "version": "0.0.1",
+  "private": false,
+  "scripts": {
+    "start": "node test.js"
+  },
+  "main": "./index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CoericK/react-native-account-kit.git"
+  },
+  "dependencies": {
+  }
+}
