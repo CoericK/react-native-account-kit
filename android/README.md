@@ -1,3 +1,11 @@
+* In `android/settings.gradle`
+
+```gradle
+...
+include ':react-native-account-kit'
+project(':react-native-account-kit').projectDir = new File(settingsDir, '../node_modules/react-native-account-kit/android')
+```
+
 * In `android/app/build.gradle`
 
 ```gradle
