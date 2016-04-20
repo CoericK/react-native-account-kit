@@ -47,3 +47,7 @@ public class MainActivity extends .... {
   ......
 }
 ```
+
+### Configure native projects
+#### [Android](https://github.com/CoericK/react-native-account-kit/tree/master/android/)
+#### [iOS](https://github.com/CoericK/react-native-account-kit/tree/master/android/)

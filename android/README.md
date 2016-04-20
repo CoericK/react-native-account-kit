@@ -1,49 +1,32 @@
-# react-native-account-kit
-React Native Account Kit for Android and iOS (soon)
+* In `manifest/AndroidManifest.xml`
 
-## Installation
-
-```bash
-npm install react-native-account-kit --save
-```
-### Add it to your android project
-
-* In `android/settings.gradle`
-
-```gradle
+```xml
 ...
-include ':react-native-account-kit'
-project(':react-native-account-kit').projectDir = new File(settingsDir, '../node_modules/react-native-account-kit/android')
-```
-
-* In `android/app/build.gradle`
-
-```gradle
-...
-dependencies {
+    <manifest ...>
+        ...
+            <uses-permission android:name="android.permission.RECEIVE_SMS" />
+            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+        ...
+        
+        <application ...>
+            ...
+            
+            <meta-data
+                android:name="com.facebook.sdk.ApplicationId"
+                android:value="@string/app_id" />
+            <meta-data
+                android:name="com.facebook.accountkit.ClientToken"
+                android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
+            <meta-data
+                android:name="com.facebook.accountkit.ApplicationName"
+                android:value="@string/app_name" />
+                
+                
+             <activity
+                        android:name="com.facebook.accountkit.ui.AccountKitActivity"
+                        android:theme="@style/AppLoginTheme"
+                        tools:replace="android:theme" />
+            ...
+        </application>
     ...
-    compile project(':react-native-account-kit')
-}
-```
-
-* Register Module (in MainActivity.java)
-
-```java
-import com.erickarroyo.accountkit.AccountKitPackage;;  // <--- import
-
-public class MainActivity extends .... {
-  
-  ......
-
-    @Override
-    protected List<ReactPackage> getPackages() {
-        return Arrays.<ReactPackage>asList(
-                new MainReactPackage(),
-                new AccountKitPackage() // <------ add this line to your MainActivity class
-        );
-    }
-  }
-
-  ......
-}
 ```
