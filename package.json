@@ -2,19 +2,35 @@
   "name": "react-native-account-kit",
   "author": {
     "name": "Erick Arroyo",
-    "email": "erick.1726@gmail.com",
+    "email": "erick@erickarroyo.com",
     "url": "http://twitter.com/coerick"
   },
-  "version": "0.0.2",
+  "version": "0.0.4",
   "private": false,
   "scripts": {
-    "start": "node test.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "main": "./index",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/CoericK/react-native-account-kit.git"
   },
+  "keywords": [
+    "react",
+    "react-component",
+    "react-native",
+    "account-kit",
+    "native",
+    "ios",
+    "android",
+    "login",
+    "sdk"
+  ],
+  "license": "MIT",
   "dependencies": {
+  },
+  "peerDependencies": {
+    "react-native": "^0.23.1",
+    "q": "^1.4.1"
   }
 }
