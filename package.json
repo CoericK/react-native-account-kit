@@ -5,7 +5,7 @@
     "email": "erick@erickarroyo.com",
     "url": "http://twitter.com/coerick"
   },
-  "version": "0.0.15",
+  "version": "0.0.16",
   "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
